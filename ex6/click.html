@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Modal Popup</title> 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+        } 
+        button { 
+            padding: 10px 20px; 
+            font-size: 16px; 
+            background-color: #007bff; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+        } 
+        button:hover { 
+            background-color: #0056b3; 
+        } 
+ 
+        /* Modal styles */ 
+        .modal { 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background: rgba(0, 0, 0, 0.5); 
+            display: none; 
+            justify-content: center; 
+            align-items: center; 
+        } 
+        .modal:target { 
+            display: flex; 
+        } 
+        .modal-content { 
+            background: white; 
+            padding: 20px; 
+            border-radius: 5px; 
+            text-align: center; 
+            width: 80%; 
+            max-width: 400px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        } 
+        .close-btn { 
+            display: inline-block; 
+            margin-top: 20px; 
+            padding: 10px 20px; 
+            font-size: 16px; 
+            background-color: #dc3545; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            text-decoration: none; 
+            cursor: pointer; 
+        } 
+        .close-btn:hover { 
+            background-color: #c82333; 
+        } 
+    </style> 
+</head> 
+    <h1>Modal Popup Example</h1> 
+    <a href="#modal" class="open-btn"> 
+        <button>Click Me</button> 
+    </a> 
+ 
+    <!-- Modal structure --> 
+    <div id="modal" class="modal"> 
+        <div class="modal-content"> 
+            <h2>Welcome to the Modal Popup</h2> 
+            <p>This is a simple modal created using HTML and CSS only. Click the button below to close it.</p> 
+            <a href="#" class="close-btn">Close</a> 
+        </div> 
+    </div> 
+    <main> 
+        <a href="/index.html">Home</a> 
+    </main> 
+</body> 
+</html>
